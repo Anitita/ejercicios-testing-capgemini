@@ -17,6 +17,7 @@ public class Sala {
         this.aireacond = aireacond;
     }
 
+
     @Override
     public String toString() {
         return "Sala{" +
