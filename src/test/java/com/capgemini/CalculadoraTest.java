@@ -2,6 +2,9 @@ package com.capgemini;
 
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -38,5 +41,24 @@ public class CalculadoraTest {
         assertEquals(2F, resultado);
 
     }
+
+
+    @ParameterizedTest(name = "{2} * {1} = {2}")
+    @CsvSource({
+            "1, 2, 2",
+            "5, 5, 25",
+            "8, 4, 32"
+
+    })
+    public void testMultiCsvSource(float first, float second, float expectedResult){
+        Calcuradora c = new Calcuradora();
+        assertEquals(expectedResult, c.multi(first, second),
+                () -> first + "*" + second + "should equal" + expectedResult);
+
+
+    }
+
+    /*@ParameterizedTest
+    @CsvFileSource(resources = "/dataCalcu.csv")*/
 
 }
