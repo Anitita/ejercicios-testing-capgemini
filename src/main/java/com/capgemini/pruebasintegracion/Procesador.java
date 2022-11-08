@@ -1,4 +1,6 @@
-package com.capgemini;
+package com.capgemini.pruebasintegracion;
+
+import com.capgemini.pruebasintegracion.Proceso;
 
 public class Procesador {
 

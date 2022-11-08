@@ -1,0 +1,97 @@
+{
+  "id": "0ca3c5d3-3549-45f9-b336-5ec926687ae9",
+  "version": "2.0",
+  "name": "wikipedia",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "e38a8386-3a5a-47f5-9d92-e3a580a23aeb",
+    "name": "wki",
+    "commands": [{
+      "id": "5b066afb-4cb2-4fc7-a0ff-4074fe60e728",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77a095e1-15dc-4649-a6c0-54f22e63eb80",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1058x666",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e0bf938-cccf-4ce4-8a20-9aed199cb084",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb6d8132-3c28-4429-92de-e944b6edc9b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "luna"
+    }, {
+      "id": "71c120ee-40fd-4097-8dff-d758169886bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.suggestions-result-current",
+      "targets": [
+        ["css=.suggestions-result-current", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf595bfb-4474-4704-a60c-a9997ea71138",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(4)",
+      "targets": [
+        ["css=p:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'La Luna es el único satélite natural de la Tierra. Con un diámetro ecuatorial de 3476 km, es el quinto satélite más grande del sistema solar, mientras que en cuanto al tamaño proporcional respecto a su planeta es el satélite más grande: un cuarto del diámetro de la Tierra y 1/81 de su masa. Es, además, después de Ío, el segundo satélite más denso. Se encuentra en relación síncrona con la Tierra, siempre mostrando la misma cara hacia el planeta. El hemisferio visible está marcado con oscuros mares lunares de origen volcánico entre las brillantes montañas antiguas y los destacados astroblemas.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b597cb58-b5ce-4434-8350-24fd292123ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(4) > b",
+      "targets": [
+        ["css=p:nth-child(4) > b", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/p/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Luna')]", "xpath:innerText"]
+      ],
+      "value": "Luna"
+    }]
+  }],
+  "suites": [{
+    "id": "0efabfee-6f50-45f9-9e80-781eca3d5cdf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e38a8386-3a5a-47f5-9d92-e3a580a23aeb"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}

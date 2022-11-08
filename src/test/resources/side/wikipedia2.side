@@ -1,0 +1,88 @@
+{
+  "id": "798dcac4-e173-465d-886c-b90b93347bfe",
+  "version": "2.0",
+  "name": "wikipedia2",
+  "url": "https://es.wikipedia.org",
+  "tests": [{
+    "id": "64b72641-ac6c-40d7-b7f6-0e8417dfcd8a",
+    "name": "wiki2",
+    "commands": [{
+      "id": "c14cccdf-dd8e-4459-8d26-bd23fb7f2124",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Wikipedia:Portada",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b17107f1-ce4d-4972-a97e-f5765db74f85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1195x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5fd3be1-6146-4dba-98b5-a8f439d45db4",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4bd2362-5ae0-44e1-89bb-420ccd4a21d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "satelite"
+    }, {
+      "id": "49519f68-b540-42bc-af34-5844fb349d1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.suggestions-result-current",
+      "targets": [
+        ["css=.suggestions-result-current", "css:finder"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "410c5ab6-451e-4003-aa32-bf6c3fe39cc5",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=satélite natural",
+      "targets": [
+        ["linkText=satélite natural", "linkText"],
+        ["css=ul:nth-child(3) > li:nth-child(1) > b > a", "css:finder"],
+        ["xpath=//a[contains(text(),'satélite natural')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li/b/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Sat%C3%A9lite_natural')]", "xpath:href"],
+        ["xpath=//b/a", "xpath:position"],
+        ["xpath=//a[contains(.,'satélite natural')]", "xpath:innerText"]
+      ],
+      "value": "satélite natural"
+    }]
+  }],
+  "suites": [{
+    "id": "269a9ff6-5101-427a-9bc5-718dbdfa6ac5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["64b72641-ac6c-40d7-b7f6-0e8417dfcd8a"]
+  }],
+  "urls": ["https://es.wikipedia.org/"],
+  "plugins": []
+}

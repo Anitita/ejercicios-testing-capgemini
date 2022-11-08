@@ -1,5 +1,6 @@
-package com.capgemini;
+package com.capgemini.pruebasintegracion;
 
+import com.capgemini.pruebasintegracion.Proceso;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
