@@ -25,7 +25,7 @@ public class Aplicacion {
 
     public void setControlador(Controlador controlador) {
 
-        Aplicacion.controlador = controlador;
+        this.controlador = controlador;
     }
 
     public Modelo getModelo() {

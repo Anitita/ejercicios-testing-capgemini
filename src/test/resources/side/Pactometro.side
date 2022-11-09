@@ -1,0 +1,46 @@
+{
+  "id": "56962c43-d29b-4e74-89d4-789ee3000225",
+  "version": "2.0",
+  "name": "Pactometro",
+  "url": "https://cursosdedesarrollo.com",
+  "tests": [{
+    "id": "c32e2f87-42b0-43b9-904a-3f8c65c3feb2",
+    "name": "testPactometro",
+    "commands": [{
+      "id": "85ad5354-c5bf-45d7-a071-1e69da7956b8",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db8e51da-5e7e-4ded-a274-f1fd482d61ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x668",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afbe078a-c628-4b9f-8c8c-f793fd001b6a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#part-PP > img",
+      "targets": [
+        ["css=#part-PP > img", "css:finder"],
+        ["xpath=//button[@id='part-PP']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "63e245a4-79f7-43d3-94aa-65f944e50a36",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c32e2f87-42b0-43b9-904a-3f8c65c3feb2"]
+  }],
+  "urls": ["https://cursosdedesarrollo.com/"],
+  "plugins": []
+}
