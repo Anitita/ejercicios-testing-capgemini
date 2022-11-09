@@ -1,0 +1,409 @@
+{
+  "id": "56962c43-d29b-4e74-89d4-789ee3000225",
+  "version": "2.0",
+  "name": "Pactometro",
+  "url": "https://cursosdedesarrollo.com",
+  "tests": [{
+    "id": "c32e2f87-42b0-43b9-904a-3f8c65c3feb2",
+    "name": "testPactometro",
+    "commands": [{
+      "id": "85ad5354-c5bf-45d7-a071-1e69da7956b8",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db8e51da-5e7e-4ded-a274-f1fd482d61ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1060x668",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afbe078a-c628-4b9f-8c8c-f793fd001b6a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#part-PP > img",
+      "targets": [
+        ["css=#part-PP > img", "css:finder"],
+        ["xpath=//button[@id='part-PP']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bdd49705-7197-4c04-b4dd-473d35c0bbe1",
+    "name": "testPactometro2",
+    "commands": [{
+      "id": "a2aa204f-0feb-483a-86d2-8b0ff621457c",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cffa6b67-167c-4133-a3c1-75d0df7bec98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1059x667",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd5da994-5583-4c9e-8dfc-fb0f099bd5a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-PSOE > img",
+      "targets": [
+        ["css=#part-PSOE > img", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']/img", "xpath:idRelative"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e204fbb5-189b-43b0-b842-befa96f560b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-Podemos",
+      "targets": [
+        ["id=part-Podemos", "id"],
+        ["css=#part-Podemos", "css:finder"],
+        ["xpath=//button[@id='part-Podemos']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'35')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "080c45eb-c039-4562-acbc-355382e385f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=sies",
+      "targets": [
+        ["id=sies", "id"],
+        ["css=#sies", "css:finder"],
+        ["xpath=//div[@id='sies']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f96281-71e2-479a-93ea-65aef49a543c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'155')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9486b58-1786-4ea7-a3a7-76f76695c693",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'155')]", "xpath:innerText"]
+      ],
+      "value": "155"
+    }]
+  }, {
+    "id": "f5a5f5ec-77b1-4269-ae78-132c6ea03c65",
+    "name": "testParametro3",
+    "commands": [{
+      "id": "350883c0-e76f-4929-b5f7-bf268569b618",
+      "comment": "",
+      "command": "open",
+      "target": "/pactometro/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c83b676d-a14a-44f6-9b09-e9659d4d652a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1192x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bab8779-c2c6-4b7f-bfb5-d2bf2a3f8134",
+      "comment": "",
+      "command": "click",
+      "target": "id=part-Podemos",
+      "targets": [
+        ["id=part-Podemos", "id"],
+        ["css=#part-Podemos", "css:finder"],
+        ["xpath=//button[@id='part-Podemos']", "xpath:attributes"],
+        ["xpath=//div[@id='partidos']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'35')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25d9e5c9-1442-4ed7-b44f-930a611ff589",
+      "comment": "",
+      "command": "click",
+      "target": "id=sies",
+      "targets": [
+        ["id=sies", "id"],
+        ["css=#sies", "css:finder"],
+        ["xpath=//div[@id='sies']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a701bcc-0828-4806-a6a2-8eb3c87e56ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-PSOE > h2",
+      "targets": [
+        ["css=#part-PSOE > h2", "css:finder"],
+        ["xpath=//button[@id='part-PSOE']/h2", "xpath:idRelative"],
+        ["xpath=//button[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'120')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41b095b8-4185-4f92-934d-f593f6370dba",
+      "comment": "",
+      "command": "click",
+      "target": "id=sies",
+      "targets": [
+        ["id=sies", "id"],
+        ["css=#sies", "css:finder"],
+        ["xpath=//div[@id='sies']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div", "xpath:idRelative"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef365673-55fe-4452-8e22-da0261c9a3e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-Vox > img",
+      "targets": [
+        ["css=#part-Vox > img", "css:finder"],
+        ["xpath=//button[@id='part-Vox']/img", "xpath:idRelative"],
+        ["xpath=//button[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e7c7bd5-326b-4a48-b6af-f47174af1849",
+      "comment": "",
+      "command": "click",
+      "target": "id=noes",
+      "targets": [
+        ["id=noes", "id"],
+        ["css=#noes", "css:finder"],
+        ["xpath=//div[@id='noes']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "024fbf5c-6fdd-4247-a8fc-fbc7bc03426b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-ERC > img",
+      "targets": [
+        ["css=#part-ERC > img", "css:finder"],
+        ["xpath=//button[@id='part-ERC']/img", "xpath:idRelative"],
+        ["xpath=//button[6]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23653c71-f0c0-4df1-91af-d67e1f2c3ecd",
+      "comment": "",
+      "command": "click",
+      "target": "id=noes",
+      "targets": [
+        ["id=noes", "id"],
+        ["css=#noes", "css:finder"],
+        ["xpath=//div[@id='noes']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7f11ee9-139a-497a-89a9-6386434c6a27",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'155')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75103ddc-6891-4cbe-a5c9-5b983fa8deda",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'155')]", "xpath:innerText"]
+      ],
+      "value": "155"
+    }, {
+      "id": "dc0b1529-a48a-48cf-9a17-c34931302a12",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=num-noes",
+      "targets": [
+        ["id=num-noes", "id"],
+        ["css=#num-noes", "css:finder"],
+        ["xpath=//h2[@id='num-noes']", "xpath:attributes"],
+        ["xpath=//div[@id='noes']/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'65')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5cf74a0-1211-47d9-afea-cb957a2645c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-noes",
+      "targets": [
+        ["id=num-noes", "id"],
+        ["css=#num-noes", "css:finder"],
+        ["xpath=//h2[@id='num-noes']", "xpath:attributes"],
+        ["xpath=//div[@id='noes']/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'65')]", "xpath:innerText"]
+      ],
+      "value": "65"
+    }, {
+      "id": "60fa4428-3c6c-47f2-be92-d97fb7536ee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#part-PNV > img",
+      "targets": [
+        ["css=#part-PNV > img", "css:finder"],
+        ["xpath=//button[@id='part-PNV']/img", "xpath:idRelative"],
+        ["xpath=//button[8]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5e0162-5a29-437f-8cfd-99a80632e7d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=abst",
+      "targets": [
+        ["id=abst", "id"],
+        ["css=#abst", "css:finder"],
+        ["xpath=//div[@id='abst']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd6ddf41-67ab-4b6d-b101-6f8d8db0b3c7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=abst",
+      "targets": [
+        ["id=abst", "id"],
+        ["css=#abst", "css:finder"],
+        ["xpath=//div[@id='abst']", "xpath:attributes"],
+        ["xpath=//div[@id='cabecera']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fee4d52-b381-47d7-86ab-ed4289873143",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-abst",
+      "targets": [
+        ["id=num-abst", "id"],
+        ["css=#num-abst", "css:finder"],
+        ["xpath=//h2[@id='num-abst']", "xpath:attributes"],
+        ["xpath=//div[@id='abst']/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'6')]", "xpath:innerText"]
+      ],
+      "value": "6"
+    }, {
+      "id": "0037b57b-0a10-44e2-b6e3-10d8f8d42038",
+      "comment": "",
+      "command": "click",
+      "target": "id=reset",
+      "targets": [
+        ["id=reset", "id"],
+        ["css=#reset", "css:finder"],
+        ["xpath=//button[@id='reset']", "xpath:attributes"],
+        ["xpath=//div[@id='botones']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a886163a-990b-4695-b411-7fd50aaef05b",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-sies",
+      "targets": [
+        ["id=num-sies", "id"],
+        ["css=#num-sies", "css:finder"],
+        ["xpath=//h2[@id='num-sies']", "xpath:attributes"],
+        ["xpath=//div[@id='sies']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "0"
+    }, {
+      "id": "06a2857b-d716-446f-b32e-af92af1ceb9e",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-abst",
+      "targets": [
+        ["id=num-abst", "id"],
+        ["css=#num-abst", "css:finder"],
+        ["xpath=//h2[@id='num-abst']", "xpath:attributes"],
+        ["xpath=//div[@id='abst']/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "1da6faf5-6720-4b09-82ca-9416b459792c",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=num-noes",
+      "targets": [
+        ["id=num-noes", "id"],
+        ["css=#num-noes", "css:finder"],
+        ["xpath=//h2[@id='num-noes']", "xpath:attributes"],
+        ["xpath=//div[@id='noes']/h2", "xpath:idRelative"],
+        ["xpath=//div[3]/h2", "xpath:position"]
+      ],
+      "value": "0"
+    }]
+  }],
+  "suites": [{
+    "id": "63e245a4-79f7-43d3-94aa-65f944e50a36",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c32e2f87-42b0-43b9-904a-3f8c65c3feb2"]
+  }],
+  "urls": ["https://cursosdedesarrollo.com/"],
+  "plugins": []
+}

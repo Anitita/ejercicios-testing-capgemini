@@ -88,6 +88,17 @@
       ],
       "value": ""
     }, {
+      "id": "bc2c2449-cdde-490a-bbee-6b6c96894236",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#part-Podemos > img",
+      "targets": [
+        ["css=#part-Podemos > img", "css:finder"],
+        ["xpath=//button[@id='part-Podemos']/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "18f96281-71e2-479a-93ea-65aef49a543c",
       "comment": "",
       "command": "verifyElementPresent",
