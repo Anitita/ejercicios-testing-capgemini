@@ -81,8 +81,4 @@ public class PaginaPrincipalStepdefs {
         noes.click();
     }
 
-    @After()
-    public void cierroElNavegador() {
-        driver.quit();
-    }
 }
