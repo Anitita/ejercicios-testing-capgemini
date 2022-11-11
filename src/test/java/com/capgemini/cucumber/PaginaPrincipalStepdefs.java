@@ -80,5 +80,4 @@ public class PaginaPrincipalStepdefs {
         // 12 | click | id=noes |
         noes.click();
     }
-
 }

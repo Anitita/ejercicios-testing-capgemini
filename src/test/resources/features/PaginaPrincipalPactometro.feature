@@ -7,6 +7,3 @@ Feature: Pactometro
   Scenario: Abrir la pagina
     When busco los elementos
     Then hago las comprobaciones
-  Scenario: Abrir la pagina 2
-    When busco los elementos
-    Then hago las comprobaciones
