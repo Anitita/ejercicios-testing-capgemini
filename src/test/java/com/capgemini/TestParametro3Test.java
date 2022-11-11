@@ -97,4 +97,20 @@ public class TestParametro3Test {
     assertEquals("0", driver.findElement(By.id("num-noes")).getText());
 
   }
+
+  @Test
+  public void testBotonPulsadoBotonDeshabilitado(){
+    // 1 | open | /pactometro/ |
+    driver.get("https://cursosdedesarrollo.com/pactometro/");
+    // 2 | setWindowSize | 1402x1219 |
+    driver.manage().window().setSize(new Dimension(1402, 1219));
+    WebElement botonPSOE = driver.findElement(By.id("part-PSOE"));
+    botonPSOE.click();
+    // System.out.println(botonPSOE.getAttribute("disabled"));
+    assertEquals("true", botonPSOE.getAttribute("disabled"));
+    driver.findElement(By.id("noes")).click();
+    botonPSOE = driver.findElement(By.id("part-PSOE"));
+    // System.out.println("style: " +botonPSOE.getAttribute("style"));
+    assertEquals("display: none;", botonPSOE.getAttribute("style"));
+  }
 }
