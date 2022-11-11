@@ -49,16 +49,16 @@ public class App
 
 
 
-        Float resultado = Calcuradora.suma( 1F,  2F);
-        System.out.println(resultado);
+        //Float resultado = Calcuradora.suma( 1F,  2F);
+       // System.out.println(resultado);
 
-        Float resultado2 = Calcuradora.multi( 1F, 2F);
-        System.out.println(resultado2);
+        //Float resultado2 = Calcuradora.multi( 1F, 2F);
+        //System.out.println(resultado2);
 
-        Float resultado3 = Calcuradora.divi(6F, 2F);
-        System.out.println(resultado3);
+        //Float resultado3 = Calcuradora.divi(6F, 2F);
+        //System.out.println(resultado3);
 
-        Float resultado4 = Calcuradora.resta(4F, 1F);
-        System.out.println(resultado4);
+        //Float resultado4 = Calcuradora.resta(4F, 1F);
+       // System.out.println(resultado4);
     }
 }
